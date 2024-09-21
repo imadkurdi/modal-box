@@ -1,0 +1,35 @@
+{
+  "name": "@imadkurdi/modal-box",
+  "version": "1.0.0",
+  "description": "This is a modal dialog box component. It is customizable and could serve multiple purposes. It is a standard custom web component written in pure vanilla JS, so it could be used in any framework.",
+  "main": "modal-box.js",
+  "keywords": [
+    "modal-box",
+    "modal box",
+    "message box",
+    "dialog box",
+    "modal",
+    "dialog",
+    "popup",
+    "alert",
+    "box",
+    "custom",
+    "customizable",
+    "ui",
+    "browser",
+    "component",
+    "web component",
+    "custom element",
+    "vanilla js"
+  ],
+  "author": "Imad Kurdi",
+  "license": "MIT",
+  "homepage": "https://github.com/imadkurdi/modal-box#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imadkurdi/modal-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imadkurdi/modal-box/issues"
+  }
+}
