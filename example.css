@@ -1,0 +1,40 @@
+main {
+   padding-block: 2rem;
+   text-align: center;
+   font-size: 200%;
+}
+
+code {
+   background-color: lightgray;
+}
+
+#user-info {
+   font-weight: bold;
+}
+
+.info-box::part(footer) {
+   display: flex;
+   justify-content: center;
+}
+.info-box > button {
+   inline-size: 33%;
+   min-inline-size: 4rem;
+   max-inline-size: 20rem;
+}
+
+.confirm {
+   --bg-color: bisque;
+}
+
+div[slot=footer] {
+   display: flex;
+}
+div[slot=footer] > button {
+   inline-size: 25%;
+}
+div[slot=footer] > button:first-child {
+   margin-inline-end: 10px;
+}
+div[slot=footer] > button:last-child {
+   margin-inline-start: auto;
+}

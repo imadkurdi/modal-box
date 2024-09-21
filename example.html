@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>modal-box example</title>
+
+   <link rel="stylesheet" href="example.css" />
+   <script type="module" src="modal-box.js"></script>
+   <script src="example.js" defer></script>
+</head>
+
+<body>
+   <button id="btn-info" autofocus>show info</button>
+   <button id="btn-del-a">AAA</button>
+   <button id="btn-del-b">BBB</button>
+   
+   <main></main>
+   
+   <modal-box class="confirm">
+      <!-- this will go into the header slot -->
+      <span slot="header">Delete User?</span>
+      
+      <!-- these will go into the default slot: the content -->
+      <p>Are you sure you want to delete user: <span id="user-info"></span></p>
+      <p>Please noe that deleting a user is ireversible action. You will never be able to restore the deleted user!</p>
+      
+      <!-- this will go into the footer slot -->
+      <div slot="footer">
+         <button data-action="no">No</button>
+         <button data-action="delete">Delete</button>
+         <button data-action="cancel">Cancel</button>
+      </div>
+   </modal-box>
+</body>
+
+<template id="tmpl-info">
+   <!-- this will go into the header slot -->
+   <span slot="header">Info</span>
+   
+   <!-- these will go into the default slot: the content -->
+   <p>This modal dialog box is created by calling <code>document.createElement("modal-box")</code></p>
+   <p>Thanks for your understanding!</p>
+
+   <!-- this will go into the footer slot -->
+   <button slot="footer">Ok</button>
+</template>
+
+<template id="tmpl-confirm">
+   <!-- this will go into the header slot -->
+   <span slot="header">Delete User?</span>
+   
+   <!-- these will go into the default slot: the content -->
+   <p>Are you sure you want to delete user: <span id="user-info"></span></p>
+   <p>Please noe that deleting a user is ireversible action. You will never be able to restore the deleted user!</p>
+   
+   <!-- this will go into the footer slot -->
+   <div slot="footer">
+      <button data-action="no">No</button>
+      <button data-action="yes">Delete</button>
+      <button data-action="cancel">Cancel</button>
+   </div>
+</template>
+
+</html>
